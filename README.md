@@ -7,7 +7,7 @@ Special thanks to http://extensionizr.com/ Chrome extension template builder
 
 ##Install
 Go to chrome://extensions/ inside Google Chrome
-Drag and Drop /bin/Kato-Chrome-Extension.crx anywhere on the page
+Drag and Drop /bin/Kato-Gif-Hider.crx anywhere on the page
 
 ###Hide Image Action
 Click image to trigger message collapse
