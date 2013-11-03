@@ -2,30 +2,29 @@
   "name": "Kato Gif Hider",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Chrome Extension to hide gifs on Kato.im",
+  "description": "Chrome Extension to hide noise on Kato.im",
   "homepage_url": "https://github.com/wernull/Kato-Gif-Hider",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
   "permissions": [
     "https://kato.im/"
   ],
   "content_scripts": [
     {
+      "matches": [
+        "https://kato.im/*"
+      ],
       "js": [
-        "js/jquery/jquery.js",
+        "vendor/jquery/jquery.js",
         "src/inject/kgh.js"
       ],
       "css": [
-        "css/kgh.css"
+        "src/inject/kgh.css"
       ],
-      "run_at": "document_end",
-      "matches": [
-        "https://kato.im/*"
-      ]
+      "run_at": "document_end"
     }
   ],
    "web_accessible_resources": [

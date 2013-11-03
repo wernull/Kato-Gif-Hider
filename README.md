@@ -1,4 +1,4 @@
 Kato-Gif-Hider
 ==============
 
-Chrome Extension to hide gifs on Kato.im
+Chrome Extension to hide noise on Kato.im
