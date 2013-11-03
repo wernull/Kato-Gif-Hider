@@ -1,6 +1,6 @@
 {
   "name": "Kato Gif Hider",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "Chrome Extension to hide noise on Kato.im",
   "homepage_url": "https://github.com/wernull/Kato-Gif-Hider",

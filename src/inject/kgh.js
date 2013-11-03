@@ -1,6 +1,7 @@
 kgh = {};
 
 kgh.InitKatoGifHide = function(){
+	// load in flyout html from web_accessible_resources
 	$.get(chrome.extension.getURL("src/inject/kgh.html"), function(html){
 		$("body").append(html);
     	kgh.SetFlyoutEvents();
@@ -39,7 +40,6 @@ kgh.SetFlyoutEvents = function () {
         closeMessage.find('.icon-collapse-alt').trigger('click');
 
     });
-
 
 }
 
