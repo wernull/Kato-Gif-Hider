@@ -4,6 +4,63 @@
 	left: 0;
 }
 
-.kgh-flyout a {
-	color: #F00;
+.kgh-icons {
+	position: relative;
+	float: left;
+	right: 0;
+	margin-left: -100%;
+	transition: margin-left .25s;
+	padding: .5em 0;
+	background: #e5e5e5;
+	border: 1px solid #ddd;
+	border-radius: 0 0 4px 0;
+}
+
+.kgh-icons:hover {
+	margin-left: 0;
+}
+
+.kgh-hide {
+	float: left;
+	clear: both;
+	white-space: nowrap;
+	color: #999;
+	padding: 0 .75em 0 .5em;
+}
+
+.kgh-hide:hover {
+	color: #2d2d2d;
+}
+
+.kgh-icon {
+	padding-right: .5em;
+}
+
+.kgh-flyout a:hover .kgh-icon {
+	text-decoration: none;
+}
+
+.kgh-hit {
+	position: absolute;
+	top: 0;
+	right: -1.5em;
+	width: 1.5em;
+	height: 7em;
+}
+
+.kgh-tab {
+	position: absolute;
+	top: .75em;
+	left: 0;
+	width: .5em;
+	transition: width .25s;
+	height: 2em;
+	background: #e5e5e5;
+	border: 1px solid #ddd;
+	border-radius: 0 4px 4px 0;
+}
+
+.kgh-icons:hover .kgh-tab {
+	width: 0;
+	border: none;
 }
