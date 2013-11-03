@@ -1,31 +1,34 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Kato Gif Hider",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.io",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Chrome Extension to hide gifs on Kato.im",
+  "homepage_url": "https://github.com/wernull/Kato-Gif-Hider",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "default_locale": "en",
-  "page_action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "page action demo",
-    "default_popup": "src/page_action/page_action.html"
-  },
   "permissions": [
     "https://kato.im/"
   ],
   "content_scripts": [
     {
-      "matches": [
-        "https://www.google.com/*"
-      ],
       "js": [
-        "src/inject/inject.js"
+        "js/jquery/jquery.js",
+        "src/inject/kgh.js"
+      ],
+      "css": [
+        "css/kgh.css"
+      ],
+      "run_at": "document_end",
+      "matches": [
+        "https://kato.im/*"
       ]
     }
+  ],
+   "web_accessible_resources": [
+    "src/inject/kgh.html"
   ]
 }
