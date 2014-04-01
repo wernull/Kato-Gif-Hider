@@ -10,7 +10,7 @@ kgh.InitKatoGifHide = function(){
 	// trigger message collapse when image is clicked
 	$(".page-org").delegate('.preview-image','click',function(e) {
         e.preventDefault();
-        $(e.target).closest('.message').find('.icon-collapse-alt').trigger('click');
+        $(e.target).closest('.message').find('.fa-minus-square-o').trigger('click');
     });
 
 }
@@ -37,7 +37,7 @@ kgh.SetFlyoutEvents = function () {
         		break;
         }
 
-        closeMessage.find('.icon-collapse-alt').trigger('click');
+        closeMessage.find('.fa-minus-square-o').trigger('click');
 
     });
 
