@@ -24,3 +24,6 @@ GitHub Pages: http://wernull.github.io/Kato-Gif-Hider/
 ###Hide all by Category
 * Hover over top left of page to open flyout
 * Click category to collapse messages of that type
+
+###Warning
+* Some updates have been made to the src and not compiled into the .crx
